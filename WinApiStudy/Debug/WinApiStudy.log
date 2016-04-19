@@ -1,9 +1,12 @@
-﻿生成启动时间为 2016/4/19 19:01:52。
+﻿生成启动时间为 2016/4/19 20:51:15。
      1>项目“E:\git\WinApiStudy\WinApiStudy\WinApiStudy.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在对“Debug\WinApiStudy.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“Debug\WinApiStudy.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         所有输出均为最新。
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>e:\git\winapistudy\winapistudy\main.cpp(25): warning C4996: '_vsnwprintf': This function or variable may be unsafe. Consider using _vsnwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(707) : 参见“_vsnwprintf”的声明
        Link:
          E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git\WinApiStudy\Debug\WinApiStudy.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\WinApiStudy.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\git\WinApiStudy\Debug\WinApiStudy.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\git\WinApiStudy\Debug\WinApiStudy.lib" /MACHINE:X86 Debug\main.obj
          WinApiStudy.vcxproj -> E:\git\WinApiStudy\Debug\WinApiStudy.exe
@@ -16,4 +19,4 @@
 
 生成成功。
 
-已用时间 00:00:00.27
+已用时间 00:00:00.54
