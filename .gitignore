@@ -27,6 +27,12 @@
 *.out
 *.app
 
+# Temp files
+*.opensdf
+*.sdf
+*.suo
+*.ipch
+
 # =========================
 # Operating System Files
 # =========================
