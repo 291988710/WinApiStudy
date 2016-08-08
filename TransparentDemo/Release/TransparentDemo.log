@@ -1,0 +1,37 @@
+﻿生成启动时间为 2016/8/8 19:45:06。
+     1>项目“E:\git\WinApiStudy\TransparentDemo\TransparentDemo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\TransparentDemo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\TransparentDemo.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\TransparentDemo.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TransparentDemo.cpp
+         TransparentDemo.cpp
+     1>TransparentDemo.cpp(145): error C2065: “IDC_BTNOK”: 未声明的标识符
+     1>TransparentDemo.cpp(152): error C2065: “hBrsh”: 未声明的标识符
+     1>TransparentDemo.cpp(154): error C2065: “rect”: 未声明的标识符
+     1>TransparentDemo.cpp(154): error C2228: “.left”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>TransparentDemo.cpp(155): error C2065: “rect”: 未声明的标识符
+     1>TransparentDemo.cpp(155): error C2228: “.right”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>TransparentDemo.cpp(155): error C2065: “rect”: 未声明的标识符
+     1>TransparentDemo.cpp(155): error C2228: “.left”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>TransparentDemo.cpp(156): error C2065: “rect”: 未声明的标识符
+     1>TransparentDemo.cpp(156): error C2228: “.top”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>TransparentDemo.cpp(157): error C2065: “rect”: 未声明的标识符
+     1>TransparentDemo.cpp(157): error C2228: “.bottom”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>TransparentDemo.cpp(157): error C2065: “rect”: 未声明的标识符
+     1>TransparentDemo.cpp(157): error C2228: “.top”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>TransparentDemo.cpp(158): error C2065: “rect”: 未声明的标识符
+     1>TransparentDemo.cpp(158): error C2065: “hBrsh”: 未声明的标识符
+     1>TransparentDemo.cpp(160): error C2065: “hBrsh”: 未声明的标识符
+     1>已完成生成项目“E:\git\WinApiStudy\TransparentDemo\TransparentDemo.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.28

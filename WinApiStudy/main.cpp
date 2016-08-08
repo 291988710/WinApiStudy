@@ -59,11 +59,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine,
 
 	hWnd = CreateWindow(szAppName,				//window class name
 						TEXT("The Hello"),		//window caption
-						WS_OVERLAPPEDWINDOW,	//window style
-						CW_USEDEFAULT,			//initial x position
-						CW_USEDEFAULT,			//initial y position
-						CW_USEDEFAULT,			//initial x size
-						CW_USEDEFAULT,			//initial y size
+						WS_THICKFRAME|WS_POPUP,	//window style
+						10,			//initial x position
+						10,			//initial y position
+						1280,			//initial x size
+						768,			//initial y size
 						NULL,					//parent window handle
 						NULL,					//window menu handle
 						hInstance,				//program instance handle
@@ -71,6 +71,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine,
 
 	ShowWindow(hWnd, iCmdShow);
 	UpdateWindow(hWnd);
+
+	// 实现透明必须设置WS_EX_LAYERED标志
+	LONG nRet = ::GetWindowLong(hWnd, GWL_EXSTYLE);
+	nRet = nRet | WS_EX_LAYERED;
+	::SetWindowLong(hWnd, GWL_EXSTYLE, nRet);
 
 	while (GetMessage(&msg, NULL, 0, 0))
 	{
@@ -101,6 +106,18 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			EndPaint(hWnd, &ps);
 			break;
 		}
+	case WM_LBUTTONDOWN:
+		{
+			//::MessageBeep(0); 
+			::SetLayeredWindowAttributes(hWnd, 0, 123, LWA_ALPHA);    // 设置半透明
+		}
+		break;
+	case WM_RBUTTONDOWN:
+		{
+			//::MessageBeep(0); 
+			::SetLayeredWindowAttributes(hWnd, 0, 255, LWA_ALPHA);    // 设置不透明
+		}
+		break;
 	case WM_DESTROY:
 		{
 			PostQuitMessage(0);
