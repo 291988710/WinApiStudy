@@ -1,0 +1,20 @@
+﻿生成启动时间为 2016/9/7 17:33:34。
+     1>项目“E:\git\WinApiStudy\WebBrowser\WebBrowser\WebBrowser.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\WebBrowser.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git\WinApiStudy\Debug\WebBrowser.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\WebBrowser.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\git\WinApiStudy\Debug\WebBrowser.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"E:\git\WinApiStudy\Debug\WebBrowser.lib" /MACHINE:X86 Debug\res.res
+         Debug\Library.obj
+         Debug\main.obj
+         Debug\WebBrowser.obj
+     1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏
+     1>已完成生成项目“E:\git\WinApiStudy\WebBrowser\WebBrowser\WebBrowser.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.07
