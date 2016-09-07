@@ -104,6 +104,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			GetClientRect(hWnd, &rc);
 			DrawText(hdc, TEXT("Hello"), -1, &rc, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
 			EndPaint(hWnd, &ps);
+			HWND hwndTest = FindWindow(NULL, _T("ÎÔµ×Èü"));
+			if (hwndTest)
+			{
+				MessageBox(NULL,  _T("werwerwer"), _T("3123"), 0);
+			}
 			break;
 		}
 	case WM_LBUTTONDOWN:
